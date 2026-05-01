@@ -40,8 +40,7 @@ jobs:
       with:
         host: ${{ secrets.EC2_HOST }}
         username: ${{ secrets.EC2_USER }}
-        key: ${{ secrets.KEY }}
-        port: ${{ secrets.EC2_SSH_KEY }}
+        key: ${{ secrets.EC2_SSH_KEY }}
         script: |
           docker stop spring-demo || true
           docker rm spring-demo || true
